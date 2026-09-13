@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this research package, please cite it."
+title: "Same Rank, Different Tournament: A Tournament-Conditioned Player Rating for Professional Golf"
+type: dataset
+authors:
+  - family-names: "Keating"
+    given-names: "John M."
+date-released: 2026-09-13
+repository-code: "https://github.com/jmkeats/gm-tsa-tcpr"
+keywords:
+  - golf analytics
+  - OWGR
+  - GM-TSA
+  - TCPR
+  - tournament strength
+  - sports analytics
