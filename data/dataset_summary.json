@@ -1,0 +1,8 @@
+{
+  "player_event_rows": 91186,
+  "unique_events": 689,
+  "development_rows_2022_2025": 59377,
+  "validation_rows_2026_raw": 31809,
+  "validation_rows_complete_scored": 30711,
+  "seasons": [2022, 2023, 2024, 2025, 2026]
+}
