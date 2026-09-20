@@ -4,6 +4,8 @@ This repository contains the data package supporting:
 
 **Same Rank, Different Tournament: A Tournament-Conditioned Player Rating for Professional Golf**
 
+**Start here for SSAC review:** [`paper/ABSTRACT.md`](paper/ABSTRACT.md) — updated abstract and supporting forward-validation table. The author’s updated Word draft is not yet committed to this repository; do not treat a named PDF or DOCX as available until its file is visible in `paper/`.
+
 Author: **John M. Keating, MBA**
 
 ## Research question
@@ -61,8 +63,8 @@ Incremental AUC versus field rank:
 - `results/tcpr_2026_validation_metrics.csv` - reported AUC, Brier score, and log-loss results.
 - `results/tcpr_2026_auc_bootstrap_confidence_intervals.csv` - event-clustered bootstrap AUC confidence intervals.
 - `figures/figure1_gm_tsa_tcpr_forward_validation.png` - figure used in the abstract package.
-- `paper/SSAC_Abstract_TCPR_Final.pdf` - committee-review version of the abstract.
-- `paper/SSAC_Abstract_TCPR_Final.docx` - editable source version.
+- `paper/ABSTRACT.md` - canonical updated abstract text, model definition and supporting validation table.
+- The revised Word/PDF copies are pending upload to `paper/`; the README will link them when they actually exist.
 - `analysis/REPRODUCIBILITY.md` - analysis and validation notes.
 
 ## Data source
