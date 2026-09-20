@@ -1,7 +1,7 @@
 # Same Rank, Different Tournament: A Tournament-Conditioned Player Rating for Professional Golf
 
 **John M. Keating, MBA**  
-SSAC Research Paper Competition Abstract Package — 470 words including title
+SSAC Research Paper Competition | Abstract and supporting material
 
 ## Introduction
 The Official World Golf Ranking (OWGR) provides global ordering of professional golfers, but it does not explicitly quantify what that ordering means inside tournament fields of different strength. Geometric-Mean Tournament Strength Adjustment (GM-TSA) treats an idealized strongest field as one in which field slot j is occupied by world rank j, then measures how actual fields depart from that benchmark. We test whether this tournament-conditioned structure can support an identity-agnostic pre-event player rating that adds predictive information beyond both global OWGR and simple tournament-relative field rank.
@@ -15,6 +15,10 @@ The held-out 2026 sample contained 30,711 scored player-events across 252 tourna
 ## Conclusion
 Tournament context changes the practical meaning of a global ranking. OWGR supplies global ordering; GM-TSA quantifies the competitive environment, and TCPR converts both into a tournament-specific player expectation that can be adjusted using only pre-event form. The significant prospective gains over tournament-relative field rank indicate that the framework adds information rather than merely repackaging OWGR. This complementary approach may improve tournament forecasting, player valuation, exemption decisions, and field-quality analysis.
 
+## Supporting model definitions (outside abstract)
+
+The abstract above is the canonical text of the updated Word draft supplied by the author. Supporting material below is separate from the abstract word count.
+
 ## Model definition
 
 `D_(i,e) = ln(R_(i,e) / j_(i,e))`
@@ -22,3 +26,14 @@ Tournament context changes the practical meaning of a global ranking. OWGR suppl
 `GM-TSA_e = 100 exp[(1/N_e) Σ_(i=1)^(N_e) ln(j_(i,e) / R_(i,e))]`
 
 The benchmark `D_(i,e)=0` corresponds to the idealized slot-equals-rank condition.
+
+## Supporting forward-validation table
+
+| Outcome | OWGR AUC | Field-rank AUC | TCPR AUC | Δ vs OWGR | Δ vs field rank | TCPR Brier |
+|---|---:|---:|---:|---:|---:|---:|
+| Made cut | 0.677 | 0.708 | 0.731 | +0.054 | +0.023 | 0.216 |
+| Top 20 | 0.634 | 0.749 | 0.759 | +0.125 | +0.010 | 0.133 |
+| Top 10 | 0.640 | 0.756 | 0.770 | +0.130 | +0.014 | 0.078 |
+| Top 5 | 0.646 | 0.769 | 0.789 | +0.144 | +0.020 | 0.044 |
+
+**Numerical verification note:** Table deltas are calculated from the displayed three-decimal AUC values. Verify against unrounded model output before formal submission.
