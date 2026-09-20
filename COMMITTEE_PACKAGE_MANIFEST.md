@@ -1,6 +1,6 @@
 # Committee Package Manifest
 
-This manifest defines the frozen GM-TSA / TCPR submission package and provides SHA-256 hashes for integrity checks.
+This manifest lists GM-TSA / TCPR research-package artifacts and their recorded SHA-256 hashes. Some listed artifacts may be archived or awaiting upload; confirm actual repository presence before treating a path as available.
 
 ## Core documentation
 
@@ -26,9 +26,10 @@ This manifest defines the frozen GM-TSA / TCPR submission package and provides S
 ## Figure and paper
 
 - `figures/figure1_gm_tsa_tcpr_forward_validation.png` — SHA-256 `a8387f6e2cbeda5f1ca3ada5a60b40975d94acabd92b130013849ec55faeb2b7`
-- `paper/SSAC_Abstract_TCPR_Final.docx` — SHA-256 `aad893cc148e185d7d2b16874bfbee4a591c7fc6d7c0f0683f0e9b599b4e8f72`
-- `paper/SSAC_Abstract_TCPR_Final.pdf` — SHA-256 `f5d4600fd60f3c20cc224fbf22bcd7d9d0025582aadfe3a7cc016f167c6437d1`
+- `paper/ABSTRACT.md` — canonical updated SSAC abstract text and supporting table (present in repository).
+- `paper/SSAC_Abstract_TCPR_Final.docx` — **not present in the repository as checked September 20, 2026**; historical recorded SHA-256 `aad893cc148e185d7d2b16874bfbee4a591c7fc6d7c0f0683f0e9b599b4e8f72` (does not describe the revised Word draft).
+- `paper/SSAC_Abstract_TCPR_Final.pdf` — **not present in the repository as checked September 20, 2026**; historical recorded SHA-256 `f5d4600fd60f3c20cc224fbf22bcd7d9d0025582aadfe3a7cc016f167c6437d1`.
 
-The PDF is the preferred committee-review copy; the Word document is retained as the editable source.
+Until revised binary files are committed and hashes updated, reviewers should use `paper/ABSTRACT.md` for the updated abstract. Do not cite the historical binary hashes as hashes of the revised draft.
 
 Underlying ranking and tournament information is attributed to the Official World Golf Ranking (OWGR). The MIT license applies only to original project code, scripts, documentation, and analytical materials; it does not relicense OWGR source data.
