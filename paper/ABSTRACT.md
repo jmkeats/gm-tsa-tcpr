@@ -31,9 +31,9 @@ The benchmark `D_(i,e)=0` corresponds to the idealized slot-equals-rank conditio
 
 | Outcome | OWGR AUC | Field-rank AUC | TCPR AUC | Δ vs OWGR | Δ vs field rank | TCPR Brier |
 |---|---:|---:|---:|---:|---:|---:|
-| Made cut | 0.677 | 0.708 | 0.731 | +0.054 | +0.023 | 0.216 |
+| Made cut | 0.677 | 0.708 | 0.731 | +0.053 | +0.023 | 0.216 |
 | Top 20 | 0.634 | 0.749 | 0.759 | +0.125 | +0.010 | 0.133 |
 | Top 10 | 0.640 | 0.756 | 0.770 | +0.130 | +0.014 | 0.078 |
 | Top 5 | 0.646 | 0.769 | 0.789 | +0.144 | +0.020 | 0.044 |
 
-**Numerical verification note:** Table deltas are calculated from the displayed three-decimal AUC values. Verify against unrounded model output before formal submission.
+**Numerical verification note:** Incremental AUC values are reported from the unrounded model outputs in `results/tcpr_2026_validation_metrics.csv` and `results/tcpr_2026_auc_bootstrap_confidence_intervals.csv`, then rounded for presentation.
